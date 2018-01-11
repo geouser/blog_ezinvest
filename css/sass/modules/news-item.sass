@@ -1,0 +1,67 @@
+.news-item
+	display: block
+	margin-bottom: 25px 
+	
+	.ni-image
+		display: block
+		width: 100%
+		margin: 0
+		border-radius: 4px 4px 0 0
+		overflow: hidden
+		
+		img
+			display: block
+			width: 100%
+			
+	.ni-text
+		font-size: 15px
+		padding: 20px 25px
+		background: #f6f6f6
+		border: 1px solid #ececec
+		border-radius: 0 0 4px 4px
+		border-top: 0
+		color: #333
+		line-height: 1.5em
+		min-height: 50px
+		text-align: center
+		transition: all .2s ease-in-out
+		overflow: hidden
+		
+		h2
+			font-weight: normal 
+			font-size: inherit 
+			
+	.ni-category
+		display: inline-block
+		position: relative
+		font-size: 14px
+		margin-bottom: 4px
+		color: #bfbfbf
+		padding: 0 8px
+		
+		&:before,
+		&:after
+			content: ''
+			transition: all .2s ease-in-out
+			background: #e6e6e6
+			height: 1px
+			position: absolute
+			top: 10px
+			width: 20px
+			
+		&:before
+			right: 100%
+			
+		&:after
+			left: 100%
+			
+
+
+	&:hover
+		.ni-category
+			&:after,
+			&:before
+				width: 40px
+				
+		.ni-text
+			background-color: #FFF 

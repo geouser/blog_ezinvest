@@ -1,0 +1,163 @@
+.post-content
+	max-width: 720px
+	margin: 0 auto 
+	padding: 4em 0
+	font-family: Georgia, "Times New Roman", Times, serif 
+	font-size: 17px
+	line-height: 25.5px
+	color: #222
+		 
+	@media (min-width: 768px)
+		font-size: 19px
+		line-height: 29px  
+	
+
+.article
+	& > p:first-child
+		font-size: 22px
+		line-height: 30px
+		font-size: 1.36em
+		line-height: 1.4em
+		
+		&:first-letter
+			float: left
+			font-family: "Aktiv Grotesk", Helvetica, Arial, sans-serif
+			font-size: 2.875em
+			font-weight: 700
+			line-height: 50px
+			margin: 6px 8px -5px 0
+			line-height: 60px
+
+	& > *:not(:last-child)
+		margin-bottom: 23px
+		
+
+	.callout
+		background: #f1f3f5
+		margin: 1.5em 0
+		padding: 1em 1em 1.5em
+		-webkit-font-smoothing: antialiased
+		
+		@media (min-width: 768px)
+			padding: 1.5em 2em
+	
+	h1,
+	h2,
+	h3
+		color: #1d2b36
+		letter-spacing: .2px
+		-webkit-font-smoothing: auto
+		font-family: "Aktiv Grotesk", Helvetica, Arial, sans-serif
+
+	h2
+		font-size: 24px
+		font-weight: 500
+		margin: 1.8em 0 .8em
+		
+		@media (min-width: 768px)
+			font-size: 28px
+			line-height: 38px
+			
+	h3
+		color: #242424
+		font-size: 20px
+		font-weight: 500
+		line-height: 27px
+		margin: 2em 0 1em
+		
+		@media (min-width: 768px)
+			font-size: 23px
+			line-height: 31px
+			
+
+
+	a
+	    transition: all .1s ease
+	    background-image: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,.4) 50%)
+	    background-repeat: repeat-x
+	    background-size: 2px 2px
+	    background-position: 0 16px
+	    color: #222
+	    
+	    @media (min-width: 768px)
+	    	background-position: 0 18px
+	    	
+	    &:hover
+	    	color: #1091E7
+	    	background-image: linear-gradient(to bottom, transparent 50%, #1091E7 50%)
+	    	
+
+
+	blockquote
+		border-left: 3px solid #222
+		margin: 35px 0
+		padding: 5px 0 5px 18px
+		font-style: italic 
+		
+		@media (min-width: 768px)
+			margin: 35px 0 35px 0
+			padding-left: 21px
+			
+
+	ul,
+	ol
+		padding-left: 2em 
+		
+		li
+			&:not(:last-child)
+				margin-bottom: 23px 
+				
+
+	img
+		max-width: 100% 
+		display: block
+		margin: 2.5em auto
+		
+
+
+
+
+
+
+
+.related-articles
+	max-width: 720px
+	margin: 0 auto 
+	margin-bottom: 3.5em 
+	
+	.ra-title
+		letter-spacing: .5px
+		text-transform: uppercase
+		color: #999
+		font-size: 13px
+		font-weight: 400
+		margin: 0 auto 2.5em
+		text-align: center
+		position: relative
+		
+		span
+			padding: 0 10px
+			background-color: #fff 
+			position: relative
+			z-index: 2 
+		
+		&:after
+			content: ''
+			width: 100%
+			position: absolute
+			top: 50%
+			left: 0
+			height: 1px
+			background-color: #e4e4e4 
+			z-index: 1 
+			
+	
+	@media (min-width: 1200px)
+		.news-item
+			.ni-text
+				font-size: 13px
+				padding: 15px
+				overflow: hidden
+				
+			.ni-category
+				font-size: 12.5px 

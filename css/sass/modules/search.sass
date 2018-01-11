@@ -1,0 +1,172 @@
+.search-active
+	overflow: hidden
+
+	.search-popup
+		transition: all 0.3s ease
+		opacity: 1
+		visibility: visible
+
+.search-popup
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	height: 100%
+	background-color: #FFF
+	z-index: 5 
+	overflow: auto
+	opacity: 0
+	visibility: hidden
+	
+
+	.search-container
+		padding: 40px 15px
+		width: 100%
+		max-width: 800px
+		margin: 0 auto
+		
+
+	.close
+		width: 40px
+		height: 40px
+		border: 0
+		padding: 0
+		border-radius: 50%
+		transition: all 0.3s ease
+		position: fixed
+		top: 10px
+		right: 25px
+		cursor: pointer
+		background-color: transparent
+		
+		&:hover
+			background-color: #f1f3f5 
+		
+		svg
+			width: 14px
+			height: 14px
+			display: block
+			margin: 0 auto
+			
+			path
+				fill: #95A2B0
+		
+
+
+.search-form
+	position: relative
+	margin-bottom: 40px 
+
+	.search-input
+		appearance: none
+		border-style: solid
+		border-width: 1px
+		box-sizing: border-box
+		display: inline-block
+		font-family: inherit
+		font-size: 100%
+		position: relative
+		vertical-align: middle
+		width: 100%
+		background: #f9fafa
+		border-color: #c1cbd4
+		border-radius: 4px
+		box-shadow: inset 0 1px 2px 1px rgba(0,0,0,.05)
+		font-size: 18px
+		font-weight: 400
+		height: 50px
+		line-height: 48px
+		padding: 0 16px
+		-webkit-font-smoothing: antialiased
+		transition: all .2s ease
+		
+		+placeholder
+			color: #757575
+			
+		&:focus
+			background: #fff
+			box-shadow: 0 0 0 0.125em rgba(3,102,214,.2)
+			border-color: #3197d6
+			outline: 0
+			
+
+	.reset-button
+		background: 0
+		border: 0
+		height: 20px
+		right: 8px
+		outline: 0
+		padding: 0 5px
+		position: absolute
+		top: 15px
+		cursor: pointer
+		display: none
+		
+		svg
+			width: 20px
+			height: 20px
+			
+			path
+				fill: #a5b2bd
+				transition: all 0.2s ease
+				
+		&:hover
+			svg
+				path
+					fill: #72808e
+					
+
+
+
+.search-empty
+	text-align: center
+	opacity: 0.6
+	color: #72808e
+
+	img
+		width: 160px
+		display: block
+		margin: 0 auto 16px
+		
+
+
+
+
+.sr-item
+	display: flex
+	align-items: flex-start
+	justify-content: flex-start
+	margin-bottom: 32px 
+	
+	.sr-image
+		width: 240px
+		margin: 0
+		
+		img
+			display: block
+			width: 100%;
+			max-width: 100% 
+			
+	.sr-content
+		width: -webkit-calc(100% - 240px)
+		width: calc(100% - 240px)
+		padding-left: 30px 
+		
+		a
+			color: #1d2b36
+			transition: all 0.15s ease-in-out
+			
+			&:hover
+				color: #3197d6;
+			
+		h2
+			font-size: 22px
+			line-height: 1.4
+			font-weight: 400
+			margin-bottom: 10px 
+			
+		p
+			line-height: 1.6
+			font-size: 14px
+			color: #72808e  
