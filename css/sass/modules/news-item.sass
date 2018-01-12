@@ -1,6 +1,10 @@
 .news-item
 	display: block
 	margin-bottom: 25px 
+	transition: all .2s
+	&:hover
+		transform: translateY(-10px)
+		box-shadow: 0 0 20px rgba(0,0,0,.2) 
 	
 	.ni-image
 		display: block
@@ -8,10 +12,23 @@
 		margin: 0
 		border-radius: 4px 4px 0 0
 		overflow: hidden
+		position: relative
 		
 		img
 			display: block
 			width: 100%
+			
+		&:after
+			content: ""
+			display: block 
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.2) 
+			opacity: 0  
+			transition: all .2s
 			
 	.ni-text
 		font-size: 15px

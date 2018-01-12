@@ -1,6 +1,12 @@
 .header
 	padding: 25px 0
-	background-color: #FFF 
+	background-color: #FFF
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%  
+	transition: all .2s 
+	z-index: 100 
 	
 	@media (max-width: 575px)
 		padding: 1em 0
@@ -48,3 +54,10 @@
 				display: block
 				max-width: 16px
 				margin: 0 auto
+				
+.headroom--unpinned
+    transform: translateY(-100%)
+.headroom--pinned,
+.headroom--bottom 
+	transform: translateY(0)
+	box-shadow: 0 0 10px rgba(0,0,0,.2) 
