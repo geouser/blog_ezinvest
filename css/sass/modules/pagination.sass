@@ -12,3 +12,47 @@
 		color: #a0a0a0
 		margin: 0 10px
 		text-transform: capitalize
+		
+
+
+
+.pagination
+	display: flex
+	align-items: stretch
+	justify-content: center
+	
+	.page-numbers
+		background-color: #fff
+		border: 1px solid
+		border-color: #ddd
+		box-sizing: border-box
+		color: #3197D6
+		cursor: pointer
+		display: block
+		line-height: 34px
+		margin-left: -1px
+		outline: 0
+		padding: 0 .75em
+		position: relative
+		text-decoration: none
+		transition: all 0.2s ease
+		
+		&:first-child
+			border-radius: 4px 0 0 4px
+			
+		&:last-child
+			border-radius: 0 4px 4px 0
+			
+		&:hover
+			background-color: #f9f9f9
+			border-color: #ddd
+			color: #1F5E89
+			text-decoration: none	
+			
+		&.current
+			background-color: #3197D6
+			border-color: #3197D6
+			color: #fff
+			z-index: 2
+			
+		
