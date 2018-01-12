@@ -26,6 +26,16 @@
 		max-width: 800px
 		margin: 0 auto
 		
+		@media (max-width: 991px)
+			max-width: 650px 
+			
+		@media (max-width: 767px)
+			max-width: 550px 
+			
+		@media (max-width: 660px)
+			padding-top: 60px 
+			max-width: 100%
+		
 
 	.close
 		width: 40px
@@ -38,7 +48,12 @@
 		top: 10px
 		right: 25px
 		cursor: pointer
-		background-color: transparent
+		background-color: #fff
+		z-index: 5 
+		
+		@media (max-width: 660px)
+			top: 10px
+			right: 15px
 		
 		&:hover
 			background-color: #f1f3f5 
@@ -137,11 +152,22 @@
 	display: flex
 	align-items: flex-start
 	justify-content: flex-start
+	flex-wrap: wrap
 	margin-bottom: 32px 
+	
+	@media (max-width: 575px)
+		margin-bottom: 3em 
 	
 	.sr-image
 		width: 240px
 		margin: 0
+		
+		@media (max-width: 767px)
+			width: 160px
+			
+		@media (max-width: 575px)
+			width: 100%
+			margin-bottom: 1em 
 		
 		img
 			display: block
@@ -152,6 +178,15 @@
 		width: -webkit-calc(100% - 240px)
 		width: calc(100% - 240px)
 		padding-left: 30px 
+		
+		@media (max-width: 767px)
+			width: -webkit-calc(100% - 160px)
+			width: calc(100% - 160px)
+			padding-left: 20px 
+			
+		@media (max-width: 575px)
+			width: 100%
+			padding-left: 0 
 		
 		a
 			color: #1d2b36
@@ -165,6 +200,9 @@
 			line-height: 1.4
 			font-weight: 400
 			margin-bottom: 10px 
+			
+			@media (max-width: 767px)
+				font-size: 20px 
 			
 		p
 			line-height: 1.6

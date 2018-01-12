@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1997px" height="221px" viewBox="0 0 1997 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>callout_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.88904049%" y1="22.851201%" x2="92.8987007%" y2="78.6540856%" id="linearGradient-1">
+            <stop stop-color="#E1F4FF" offset="0%"></stop>
+            <stop stop-color="#AED3FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1179.98939,221 L0.600881433,221 C46.9442433,173.021006 110.006948,141.962594 182.950724,122.835116 C390.438704,68.4351426 463.989998,313.910241 811.97569,65.0016463 C1014.49069,-85.6128036 1109.96023,51.9997116 1179.98939,221 Z" id="path-2"></path>
+        <path d="M909.845869,162 L0.618425159,162 C35.4966639,131.23313 80.2057643,110.551645 131.009927,97.2296661 C294.180157,54.4490857 352.021494,247.492694 625.680261,51.7489567 C779.944176,-62.9801943 855.224918,34.9580443 909.845869,162 Z" id="path-4"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-205.000000, -327.000000)">
+        <g id="callout_bg" transform="translate(205.000000, 327.000000)">
+            <g id="Fill-1-Clipped" transform="translate(817.000000, 0.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Combined-Shape" fill="url(#linearGradient-1)" opacity="0.300000012" xlink:href="#path-2"></use>
+            </g>
+            <g id="Fill-1-Clipped" transform="translate(0.000000, 59.000000)">
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <use id="Combined-Shape" fill="url(#linearGradient-1)" opacity="0.300000012" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

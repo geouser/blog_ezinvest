@@ -118,6 +118,21 @@ jQuery(document).ready(function($) {
     });
 
 
+
+
+    /*---------------------------
+                                  Fixing social share buttons
+    ---------------------------*/
+    function em(input) {
+        var emSize = parseFloat($("body").css("font-size"));
+        return (emSize * input);
+    }
+    $('#c-share-page').stick_in_parent({
+        parent: '#post-content',
+        offset_top: em(4)
+    });
+
+
     /*---------------------------
                                   Fancybox
     ---------------------------*/
@@ -146,6 +161,22 @@ jQuery(document).ready(function($) {
             loop : false
         });
     }
+
+
+
+
+    /*---------------------------
+                                  Subscribe popup
+    ---------------------------*/
+    function display_subscribe_popup(){
+        $('#modal-popup-subscribe').addClass('visible');
+    }
+    //setTimeout(display_subscribe_popup, 2000);
+
+    $('.js-dismise-subscribe').on('click', function(event) {
+        event.preventDefault();
+        $('#modal-popup-subscribe').removeClass('visible');
+    });
 
 
 

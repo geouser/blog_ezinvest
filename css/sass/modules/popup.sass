@@ -1,0 +1,44 @@
+.s-popup
+	background: #f9fafa
+	border-radius: 0
+	bottom: 0
+	box-shadow: 0 0 0 1px rgba(0,17,53,.16), 0 0 5px 0 rgba(0,17,53,.16)
+	left: 0
+	padding: 25px
+	position: fixed
+	right: 0
+	text-align: left
+	width: 100%
+	z-index: 1000
+	
+	opacity: 0
+	visibility: hidden
+	transition: all 0.5s ease
+	
+	&.visible
+		opacity: 1
+		visibility: visible
+	
+	@media (min-width: 575px)
+		border-radius: 4px
+		bottom: 20px
+		left: auto
+		right: 20px
+		width: 360px
+		
+
+	&__title
+		color: #2a3b47
+		font-size: 14px
+		margin-bottom: 12px
+		
+	&__form
+		margin-bottom: 10px 
+		
+	.no-thanks
+		color: #72808e
+		text-decoration: underline
+		font-size: 0.85em
+		
+		&:hover
+			text-decoration: none

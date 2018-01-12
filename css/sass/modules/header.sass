@@ -2,12 +2,22 @@
 	padding: 25px 0
 	background-color: #FFF 
 	
+	@media (max-width: 575px)
+		padding: 1em 0
+	
+	.logo-box
+		@media (max-width: 575px)
+			text-align: center
+			padding-bottom: 1em 
 
 
 	&-actions
 		display: flex
 		align-items: center
 		justify-content: flex-end
+		
+		@media (max-width: 575px)
+			justify-content: center
 		
 		.btn
 			text-transform: uppercase
@@ -27,6 +37,9 @@
 			cursor: pointer
 			border-radius: 50%
 			transition: all 0.3s ease
+			
+			span
+				display: none
 			
 			&:hover
 				background-color: #f1f3f5 

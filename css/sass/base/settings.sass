@@ -11,6 +11,17 @@ body
 /* Container */
 .container
 	padding: 0 15px
+	
+.container-small
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto 
+	
+	@media (min-width: 576px)
+		max-width: 540px
+		
+	@media (min-width: 768px)
+		max-width: 720px
 		
 +placeholder
 	opacity: 1

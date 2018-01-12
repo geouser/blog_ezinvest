@@ -1,16 +1,19 @@
 .post-content
-	max-width: 720px
-	margin: 0 auto 
 	padding: 4em 0
 	font-family: Georgia, "Times New Roman", Times, serif 
 	font-size: 17px
 	line-height: 25.5px
 	color: #222
+	position: relative
+	
+	@media (max-width: 991px)
+		padding-top: 3em 
 		 
 	@media (min-width: 768px)
 		font-size: 19px
 		line-height: 29px  
-	
+		
+
 
 .article
 	& > p:first-child
@@ -27,6 +30,10 @@
 			line-height: 50px
 			margin: 6px 8px -5px 0
 			line-height: 60px
+			
+			@media (max-width: 767px)
+				height: 50px
+				line-height: 50px 
 
 	& > *:not(:last-child)
 		margin-bottom: 23px
@@ -121,8 +128,6 @@
 
 
 .related-articles
-	max-width: 720px
-	margin: 0 auto 
 	margin-bottom: 3.5em 
 	
 	.ra-title
@@ -152,7 +157,7 @@
 			z-index: 1 
 			
 	
-	@media (min-width: 1200px)
+	@media (min-width: 768px)
 		.news-item
 			.ni-text
 				font-size: 13px
@@ -161,3 +166,249 @@
 				
 			.ni-category
 				font-size: 12.5px 
+				
+
+
+.c-share-page
+	width: 36px
+	position: absolute
+	top: 4em
+	left: 36px
+
+	& + div
+		display: none!important 
+	
+	@media (max-width: 991px)
+		position: static!important
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 2em 
+		
+		
+	
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 12px
+		width: 36px
+		height: 36px
+		border-radius: 50%
+		background-color: #f1f3f5  
+		transition: all 0.2s ease
+		
+		@media (max-width: 991px)
+			margin: 0 6px
+		
+		svg
+			display: block
+			max-width: 20px 
+			
+			path
+				fill: #b4c0ca
+				transition: all 0.2s ease
+				
+		&:hover
+			svg
+				path
+					fill: #fff
+					
+		&--twitter:hover
+			background-color: #04aceb 
+			
+		&--facebook:hover
+			background-color: #3B5998 
+			
+		&--gplus:hover
+			background-color: #f44336
+			
+		&--reddit:hover
+			background-color: #FF4500
+			
+		&--email:hover
+			background-color: #a5b2bd 
+			
+
+
+
+.author-info
+	display: flex
+	align-items: flex-start
+	margin-bottom: 4em 
+	
+	.ai-image
+		width: 80px
+		border-radius: 50%
+		overflow: hidden
+		margin: 0
+		
+		img
+			width: 100%
+			display: block
+		
+	.ai-content
+		width: -webkit-calc(100% - 80px)
+		width: calc(100% - 80px)
+		padding-left: 30px 
+		color: #999
+		font-size: 13px
+		line-height: 20px
+		-moz-osx-font-smoothing: antialiased!important
+		-webkit-font-smoothing: antialiased!important
+		
+		@media (max-width: 767px)
+			padding-left: 15px 
+		
+		@media (min-width: 768px)
+			font-size: 15px
+			line-height: 23px
+			
+		a
+			color: inherit
+			text-decoration: underline
+			transition: all 0.15 ease
+			
+			&:hover
+				color: #555
+				
+
+
+.product-promo
+	padding: 5em 0
+	background-image: linear-gradient(-180deg,#F6F9FC 19%,#FFF 72%)
+	overflow: hidden
+	position: relative
+	z-index: 1 
+	
+	& + .footer
+		border-top: 0
+	
+	@media (min-width: 768px)
+		margin-top: 7em
+		padding: 6em 0 5em
+		
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background: url('../images/callout_bg.svg') bottom center no-repeat
+		z-index: -1 
+		
+
+
+.pp-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	padding: 0 2em
+	
+	@media (max-width: 1199px)
+		padding: 0
+	
+	.pp-quote
+		width: 410px
+		
+		@media (max-width: 1199px)
+			width: 380px
+			
+		@media (max-width: 991px)
+			width: 320px
+			
+		@media (max-width: 767px)
+			width: 100%
+			margin-bottom: 4em 
+		
+	.pp-content
+		width: -webkit-calc(100% - 410px)
+		width: calc(100% - 410px)
+		padding-left: 80px 
+		
+		@media (max-width: 1199px)
+			padding-left: 60px
+			width: -webkit-calc(100% - 380px)
+			width: calc(100% - 380px)
+			
+		@media (max-width: 991px)
+			padding-left: 50px
+			width: -webkit-calc(100% - 320px)
+			width: calc(100% - 320px)
+			
+		@media (max-width: 767px)
+			width: 100%
+			padding-left: 0 
+			text-align: center
+		
+		&__title
+			font-weight: normal 
+			line-height: 1.3em
+			font-size: 24px
+			
+			@media (min-width: 768px)
+				font-size: 26px
+				line-height: 1.4em 
+				
+			@media (min-width: 992px)
+				font-size: 30px
+				line-height: 1.5em 
+				
+			@media (min-width: 1200px)
+				font-size: 36px 
+				
+		&__button
+			margin-top: 2em
+			padding: 0.8em 2em 
+			font-size: 16px   
+		
+
+.pp-quote-card
+	background-color: #fff
+	border-radius: 4px
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+	overflow: hidden
+	
+	img
+		display: block
+		width: 100%
+	
+	@media (min-width: 768px)
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,.05), 0 37px 56px 0 rgba(0,0,0,.16)
+		
+
+
+	blockquote
+		padding: 3.5em 2em 2em
+		margin: 0
+		text-align: center
+		font-style: italic
+		position: relative
+		color: #4f5d6b
+		font-size: 17.5px
+		line-height: 1.6em
+		
+		@media (max-width: 1199px)
+			font-size: 16px 
+			
+		@media (max-width: 1199px)
+			font-size: 14px 
+		
+		&:before
+			content: ''
+			width: 29px
+			height: 24px
+			background: url('../images/quote-icon.svg') top left no-repeat
+			position: absolute
+			top: 20px
+			left: 50%
+			transform: translate3d(-50%,0,0)
+			z-index: 1
+			
+		cite
+			display: block
+			margin-top: 1em
+			font-size: 0.8em
+			color: #93a1af
