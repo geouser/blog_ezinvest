@@ -51,6 +51,11 @@ jQuery(document).ready(function($) {
         });
     });
 
+    $(window).on('resize load', function(event) {
+        event.preventDefault();
+        $('body').css( 'padding-top', $('.header').outerHeight() );
+    });
+
 
     /*---------------------------
                                   File input logic
@@ -92,9 +97,22 @@ jQuery(document).ready(function($) {
     ---------------------------*/
     $('.js-toggle-menu').on('click', function(event) {
         event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
         $(this).toggleClass('is-active');
-        $(this).siblings('header').toggleClass('open');
+        $('.mobile-menu').slideToggle();
     });
+
+
+    /*---------------------------
+                                  Mobile-menu
+    ---------------------------*/
+    $('.mobile-menu .menu-item-has-children > a').on('click', function(event) {
+        event.preventDefault();
+        $(this).siblings('.sub-menu').slideToggle();
+    });
+
 
 
     /*---------------------------

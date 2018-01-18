@@ -1,0 +1,99 @@
+.tv-widget-ticker
+	display: flex
+	align-items: stretch
+	justify-content: flex-start
+	background-color: #073142 
+	flex-wrap: wrap
+	
+	&-item
+		width: 16.6666%
+		color: #e1ecf2
+		position: relative
+		padding: 10px 23px
+		height: 70px
+		border-left: 1px solid transparent
+		
+		@media (max-width: 1199px)
+			padding: 8px 15px
+			height: auto
+			
+		@media (max-width: 991px)
+			width: 33.33%
+			border-bottom: 1px solid #2d4d5a
+			
+		@media (max-width: 575px)
+			width: 50%
+			padding: 6px 10px
+		
+		&:not(:first-child):after
+			content: ""
+			position: absolute
+			top: 10px
+			bottom: 10px
+			left: -1px
+			width: 1px
+			background-color: #2d4d5a
+			
+		&__head	
+			display: flex
+			height: 20px
+			width: 100%
+			flex-direction: row
+			justify-content: space-between
+			align-items: stretch
+			font-size: 12px
+			
+			@media (max-width: 1199px)
+				font-size: 11px 
+				
+			
+		&__title
+			white-space: nowrap
+			
+		&__last
+			&--falling
+				color: #ff4a68
+			
+			&--growing
+				color: #3cbc98
+
+		&__body
+			width: 100%
+			white-space: nowrap
+			text-overflow: ellipsis
+			font-size: 22px
+			line-height: 26px
+			
+			@media (max-width: 1199px)
+				font-size: 18px 
+				
+			@media (max-width: 575px)
+				font-size: 16px 
+			
+			&--up
+				color: #3cbc98
+
+			&--down
+				color: #ff4a68
+			
+		&__change-direction
+			display: inline-block
+			vertical-align: top
+			margin: 9px 9px 0 -3px
+			width: 12px
+			height: 8px
+			
+			@media (max-width: 1199px)
+				margin-right: 5px 
+			
+			svg
+				width: 12px
+				height: 8px
+				display: block
+				
+		&__body--down &__change-direction svg
+			transform: scale(-1)
+				
+		&__change
+			font-size: 12px
+			margin: 0 0 0 8px
