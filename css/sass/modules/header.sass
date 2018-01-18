@@ -116,8 +116,9 @@
 			&:hover
 				color: #394956
 				
-		&.current-menu-item
-			a
+		&.current-menu-item,
+		&.current-menu-ancestor
+			& > a
 				color: #394956
 				
 		&-has-children
@@ -163,7 +164,8 @@
 					&:hover
 						background-color: #f5f5f5
 						
-				&.current-menu-utem
+				&.current-menu-item,
+				&.current-menu-ancestor
 					a
 						color: #fff 
 						background-color: #3197d6 
@@ -179,6 +181,7 @@
 
 .mobile-menu
 	border-top: 1px solid #D9D9D9
+	border-bottom: 1px solid #D9D9D9
 	padding: 15px 0
 	display: none
 	
