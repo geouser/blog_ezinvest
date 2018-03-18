@@ -54,6 +54,7 @@ jQuery(document).ready(function($) {
     $(window).on('resize load', function(event) {
         event.preventDefault();
         $('body').css( 'padding-top', $('.header').outerHeight() );
+        $('.footer-dark').css('padding-bottom', $('.sticky-footer').outerHeight());
     });
 
 
